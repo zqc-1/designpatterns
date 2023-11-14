@@ -12,6 +12,7 @@
         <module>simplefactory</module>
         <module>factorymethod</module>
         <module>abstractfactory</module>
+        <module>singletonPattern</module>
     </modules>
 
     <properties>
