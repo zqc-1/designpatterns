@@ -1,4 +1,4 @@
-package com.zqc.pattern.prototype.deep;
+package com.zqc.pattern.prototype.singleton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 public class Client {
     public static void main(String[] args) {
         //创建原对象
-        ConcretePrototype prototype = new ConcretePrototype();
+        ConcretePrototype prototype = ConcretePrototype.getInstance();
         prototype.setAge(18);
         prototype.setName("lisi");
         List<String> hobbies = new ArrayList<>();
@@ -15,8 +15,7 @@ public class Client {
         prototype.setHobbies(hobbies);
 
         //拷贝原型对象
-//        ConcretePrototype cloneType = prototype.deepClone();
-        ConcretePrototype cloneType = prototype.deepCloneHobbies();
+        ConcretePrototype cloneType = prototype.clone();
         cloneType.getHobbies().add("技术控");
 
         System.out.println("原型对象：" + prototype);
