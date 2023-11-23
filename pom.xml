@@ -15,6 +15,7 @@
         <module>singletonPattern</module>
         <module>prototypePattern</module>
         <module>builderPattern</module>
+        <module>proxyPattern</module>
     </modules>
 
     <properties>
