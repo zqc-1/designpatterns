@@ -16,6 +16,7 @@
         <module>prototypePattern</module>
         <module>builderPattern</module>
         <module>proxyPattern</module>
+        <module>facadePattern</module>
     </modules>
 
     <properties>
